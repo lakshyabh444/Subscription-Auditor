@@ -1,0 +1,12 @@
+Date,Description,Amount,Category,Balance
+2024-01-01,Opening Balance,0.00,Transfer,1000.00
+2024-01-02,Grocery Store,-45.50,Groceries,954.50
+2024-01-05,Netflix.com,-15.99,Entertainment,938.51
+2024-01-08,Gas Station,-40.00,Transport,898.51
+2024-01-10,Spotify Premium,-10.99,Entertainment,887.52
+2024-01-15,Paycheck,2500.00,Income,3387.52
+2024-01-16,Amazon Prime,-14.99,Shopping,3372.53
+2024-01-20,Gym Membership,-50.00,Health,3322.53
+2024-01-22,Restaurant Dinner,-85.00,Dining,3237.53
+2024-01-25,Adobe Creative Cloud,-54.99,Software,3182.54
+2024-01-28,Coffee Shop,-5.50,Dining,3177.04
