@@ -33,7 +33,7 @@ Subscription Auditor is a modern web application designed to help you identify r
 
 ### Prerequisites
 
--   Node.js 18+ installed
+-   Node.js installed
 
 ### Installation
 
