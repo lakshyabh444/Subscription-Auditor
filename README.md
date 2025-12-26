@@ -52,7 +52,7 @@ Subscription Auditor is a modern web application designed to help you identify r
     npm run dev
     ```
 
-4.  Open [http://localhost:3000](http://localhost:3000) in your browser.
+4.  Open [https://lakshyabh444.github.io/Subscription-Auditor](https://lakshyabh444.github.io/Subscription-Auditor) in your browser.
 
 ## 💡 How It Works
 
