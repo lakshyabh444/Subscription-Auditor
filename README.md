@@ -13,6 +13,8 @@ Subscription Auditor is a modern web application designed to help you identify r
 -   **⚡ Drag & Drop Interface**: Simply drop your CSV bank statement to instantly audit your spend.
 -   **🎮 Demo Mode**: Don't have a CSV handy? Click "Try Demo Data" to see the app in action with realistic sample data.
 -   **🎨 Premium UI**: Features glassmorphism, gradient text, staggered animations (`framer-motion`), and a sleek dark theme.
+-   **📈 Visual Analytics**: Interactive Pie Chart showing spend distribution by category (Entertainment, Food, etc.).
+-   **📄 PDF Reports**: Generate and download professional PDF audit reports with a single click.
 -   **📊 Smart Analytics**:
     -   Monthly Spend Calculation (in **₹**)
     -   Active Subscription Count
