@@ -64,16 +64,18 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <div className="mt-32 border-t border-white/5 pt-12 flex flex-col md:flex-row items-center justify-between gap-6 opacity-50">
-          <p className="text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} Subscription Auditor. Built for privacy.
-          </p>
-          <p className="text-sm text-gray-500 font-medium hover:text-white transition-colors cursor-default">
+        <div className="mt-32 border-t border-white/5 pt-12 grid grid-cols-1 md:grid-cols-3 gap-6 opacity-50 text-sm text-gray-500">
+          <div className="text-center md:text-left order-2 md:order-1">
+            &copy; {new Date().getFullYear()} Subscription Auditor.
+          </div>
+
+          <div className="text-center font-medium hover:text-white transition-colors cursor-default order-1 md:order-2">
             Made by Lakshya Bhardwaj
-          </p>
-          <div className="flex items-center gap-2 text-sm text-gray-500">
+          </div>
+
+          <div className="flex items-center justify-center md:justify-end gap-2 order-3">
             <ShieldCheck className="w-4 h-4" />
-            <span>Zero-Data Retention Policy</span>
+            <span>Zero-Data Retention</span>
           </div>
         </div>
 
