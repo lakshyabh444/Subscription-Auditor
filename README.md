@@ -2,7 +2,6 @@
 
 **A Privacy-First Subscription Tracker running entirely in your browser.**
 
-![Project Banner](https://via.placeholder.com/1200x600/050505/ffffff?text=Subscription+Auditor)
 
 ## 🚀 Overview
 Subscription Auditor is a modern web application designed to help you identify recurring subscription payments from your bank statements. Built with **Next.js 15** and **Tailwind CSS v4**, it offers a premium, dark-mode interface that processes your financial data securely on your device—**no data is ever sent to a server.**
@@ -71,6 +70,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4.  Push to the branch (`git push origin feature/AmazingFeature`)
 5.  Open a Pull Request
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
