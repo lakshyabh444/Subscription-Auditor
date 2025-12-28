@@ -3,6 +3,8 @@ import React from 'react';
 import { Subscription } from '@/lib/detectSubscriptions';
 import { CheckCircle2, AlertCircle, Download } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { jsPDF } from 'jspdf';
+import autoTable from 'jspdf-autotable';
 
 interface SubscriptionTableProps {
     subscriptions: Subscription[];
@@ -10,7 +12,36 @@ interface SubscriptionTableProps {
 
 export function SubscriptionTable({ subscriptions }: SubscriptionTableProps) {
     const handleExport = () => {
-        alert('Report downloaded successfully');
+        const doc = new jsPDF();
+
+        // Title
+        doc.setFontSize(20);
+        doc.text('Subscription Audit Report', 14, 22);
+
+        doc.setFontSize(11);
+        doc.text(`Generated on: ${new Date().toLocaleDateString()}`, 14, 30);
+
+        // Table
+        const tableData = subscriptions.map(sub => [
+            sub.date,
+            sub.description,
+            sub.category || 'Uncategorized',
+            `Rs. ${sub.amount.toFixed(2)}`
+        ]);
+
+        const total = subscriptions.reduce((sum, sub) => sum + sub.amount, 0);
+
+        autoTable(doc, {
+            head: [['Date', 'Description', 'Category', 'Amount']],
+            body: tableData,
+            startY: 40,
+            theme: 'grid',
+            headStyles: { fillColor: [79, 70, 229] }, // Indigo color
+            foot: [['', '', 'Total Spend', `Rs. ${total.toFixed(2)}`]],
+            footStyles: { fillColor: [244, 63, 94], fontStyle: 'bold' } // Rose color
+        });
+
+        doc.save('subscription-audit-report.pdf');
     };
 
     if (subscriptions.length === 0) {

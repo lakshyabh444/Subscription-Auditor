@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { DragDropZone } from '@/components/DragDropZone';
 import { SubscriptionTable } from '@/components/SubscriptionTable';
 import { SummaryCard } from '@/components/SummaryCard';
+import { SpendChart } from '@/components/SpendChart';
 import { ParseResult } from '@/lib/detectSubscriptions';
 import { ShieldCheck, Lock } from 'lucide-react';
 
@@ -58,6 +59,9 @@ export default function Home() {
                 totalSpend={data.totalSpend}
                 subscriptionCount={data.subscriptions.length}
               />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <SpendChart subscriptions={data.subscriptions} />
+              </div>
               <SubscriptionTable subscriptions={data.subscriptions} />
             </div>
           )}
