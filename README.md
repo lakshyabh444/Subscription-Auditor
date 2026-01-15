@@ -53,7 +53,7 @@ Subscription Auditor is a modern web application designed to help you identify r
     npm run dev
     ```
 
-4.  Open [Launch Subscription Auditor](http://localhost:3000) in your browser.
+4.  Open [Launch Subscription Auditor](https://subscription-auditor.vercel.app/) in your browser.
 
 ## 💡 How It Works
 
